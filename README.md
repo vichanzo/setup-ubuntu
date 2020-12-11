@@ -1,2 +1,2 @@
 # setup-ubuntu
-Ubuntu setup scripts
+Ubuntu 20.04 setup scripts
