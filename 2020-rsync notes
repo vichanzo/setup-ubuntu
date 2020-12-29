@@ -1,0 +1,12 @@
+
+boot into 
+
+mount
+
+#a = archive
+#A = update the destination ACLs to be the same
+#X = update the destination eXtended attributes
+#v = verbose
+rsync -aAXv --exclude '/sys/*' --exclude '/proc/*' --exclude '/mnt/*' --exclude '/media/*/*' --exclude '/tmp/*' --exclude '/home/*/.gvfs' --exclude '/home/*/.cache/gvfs' --exclude '/root/.gvfs' --exclude '/var/lib/lightdm/.gvfs' --exclude '/lib/live/*' / /mnt/hd
+
+# rsync -aAXv --exclude '/sys/*' --exclude '/proc/*' --exclude '/host/*' --exclude '/mnt/*' --exclude '/media/*/*' --exclude '/tmp/*' --exclude '/home/*/.gvfs' --exclude '/home/*/.cache/gvfs' --exclude '/root/.gvfs' --exclude '/var/lib/lightdm/.gvfs' / /mnt/hd
